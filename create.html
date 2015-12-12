@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedeemX</title>
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Open Sans Font [ OPTIONAL ] -->
+    <link href="css/fonts.css" rel="stylesheet">
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="css/nifty.min.css" rel="stylesheet">
+    <!--Font Awesome [ OPTIONAL ]-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!--Animate.css [ OPTIONAL ]-->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!--Morris.js [ OPTIONAL ]-->
+    <link href="css/morris.min.css" rel="stylesheet">
+    <!--Switchery [ OPTIONAL ]-->
+    <link href="css/switchery.min.css" rel="stylesheet">
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <!--Demo script [ DEMONSTRATION ]-->
+    <link href="css/nifty-demo.min.css" rel="stylesheet">
+
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+
+    <!--SCRIPT-->
+    <!--=================================================-->
+
+    <!--Page Load Progress Bar [ OPTIONAL ]-->
+    <link href="css/pace.min.css" rel="stylesheet">
+    <script src="js/pace.min.js"></script>
+
+
+    <style type="text/css"></style>
+    <style type="text/css">.jqstooltip {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        visibility: hidden;
+        background-color: #3a3f44;
+        border-radius: 2px;
+        color: white;
+        text-align: right;
+        white-space: nowrap;
+        padding: 7px 14px;
+        z-index: 10000;
+    }
+
+    .jqsfield {
+        color: white;
+        font-size: 14px;
+        text-align: right;
+    }</style>
+</head>
+
+<body class="nifty-ready  pace-done" cz-shortcut-listen="true">
+
+
+<div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+        <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+</div>
+
+
+<div id="container" class="effect mainnav-lg">
+
+    <!--NAVBAR-->
+    <!--===================================================-->
+    <header id="navbar" class="">
+        <div id="navbar-container" class="boxed">
+
+            <!--Brand logo & name-->
+            <!--================================-->
+            <div class="navbar-header">
+                <a href="index.html"
+                   class="navbar-brand">
+                    <div class="brand-title">
+                        <img style="max-height: 25px" src="img/logo.png">
+                    </div>
+
+                </a>
+            </div>
+            <!--================================-->
+            <!--End brand logo & name-->
+
+
+            <!--Navbar Dropdown-->
+            <!--================================-->
+            <div class="navbar-content clearfix">
+                <ul class="nav navbar-top-links pull-left">
+
+                    <!--Navigation toogle button-->
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <li class="tgl-menu-btn">
+                        <a class="mainnav-toggle" href="#index.html#">
+                            <i class="fa fa-navicon fa-lg"></i>
+                        </a>
+                    </li>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <!--End Navigation toogle button-->
+
+
+                </ul>
+                <ul class="nav navbar-top-links pull-right">
+
+
+                    <!--User dropdown-->
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <li id="dropdown-user" class="dropdown">
+                        <a href="#index.html#" data-toggle="dropdown"
+                           class="dropdown-toggle text-right">
+								<span class="pull-right">
+									<img class="img-circle img-user media-object" src="img/av1.png"
+                                         alt="Profile Picture">
+								</span>
+
+                            <div class="username hidden-xs">Xander</div>
+                        </a>
+
+
+                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
+
+                            <!-- Dropdown heading  -->
+                            <div class="pad-all bord-btm">
+                                <p class="text-lg text-muted text-thin mar-btm">750Gb of 1,000Gb Used</p>
+
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar" style="width: 70%;">
+                                        <span class="sr-only">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- User dropdown menu -->
+                            <ul class="head-list">
+                                <li>
+                                    <a href="#index.html#">
+                                        <i class="fa fa-user fa-fw fa-lg"></i> Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#index.html#">
+                                        <span class="badge badge-danger pull-right">9</span>
+                                        <i class="fa fa-envelope fa-fw fa-lg"></i> Messages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#index.html#">
+                                        <span class="label label-success pull-right">New</span>
+                                        <i class="fa fa-gear fa-fw fa-lg"></i> Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#index.html#">
+                                        <i class="fa fa-question-circle fa-fw fa-lg"></i> Help
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#index.html#">
+                                        <i class="fa fa-lock fa-fw fa-lg"></i> Lock screen
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Dropdown footer -->
+                            <div class="pad-all text-right">
+                                <a href="#pages-login.html" class="btn btn-primary">
+                                    <i class="fa fa-sign-out fa-fw"></i> Logout
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <!--End user dropdown-->
+
+                </ul>
+            </div>
+            <!--================================-->
+            <!--End Navbar Dropdown-->
+
+        </div>
+    </header>
+    <!--===================================================-->
+    <!--END NAVBAR-->
+
+    <div class="boxed">
+
+        <!--CONTENT CONTAINER-->
+        <!--===================================================-->
+        <div id="content-container">
+
+            <!--Page Title-->
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div id="page-title">
+                <h1 class="page-header text-overflow">Create Promotion Campaign</h1>
+            </div>
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <!--End page title-->
+
+
+            <!--Breadcrumb-->
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <ol class="breadcrumb">
+                <li><a href="#index.html#">Home</a></li>
+                <li class="active">Data</li>
+            </ol>
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <!--End breadcrumb-->
+
+
+            <!--Page content-->
+            <!--===================================================-->
+            <div id="page-content">
+
+
+                <!-- start here -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Create Promotion </h3>
+                            </div>
+
+                            <!-- BASIC FORM ELEMENTS -->
+                            <!--===================================================-->
+                            <form class="panel-body form-horizontal form-padding">
+
+
+                                <!--Text Input-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="demo-text-input">Campaign Name</label>
+
+                                    <div class="col-md-9">
+                                        <input type="text" id="demo-text-input" class="form-control"
+                                               Value="Outback Steakhouse Outback Steakhouse at 2 Locations">
+                                    </div>
+                                </div>
+
+
+                                <!--Textarea-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="demo-textarea-input">Description</label>
+
+                                    <div class="col-md-9">
+                                        <textarea id="demo-textarea-input" rows="9" class="form-control">Classic steakhouse fare in an Australian ambiance featuring dishes like ribs and chicken combo, black pepper steak bites, and Toowoomba chicken. Available at 2 locations in the heart of town.
+                                        </textarea>
+                                    </div>
+                                </div>
+
+
+                                <!--Textarea-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="demo-textarea-input">Original
+                                        Price</label>
+
+                                    <div class="col-md-9">
+                                        <div class="input-group mar-btm">
+                                            <span class="input-group-addon"><i class="fa fa-dollar fa-lg"></i></span>
+                                            <input type="text" class="form-control" value="39.99">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Textarea-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="demo-textarea-input">Discounted
+                                        Price</label>
+
+                                    <div class="col-md-9">
+                                        <div class="input-group mar-btm">
+                                            <span class="input-group-addon"><i class="fa fa-dollar fa-lg"></i></span>
+                                            <input type="text" class="form-control" value="9.99">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label class="col-md-3 control-label">Duration</label>
+
+                                    <div class="col-md-9">
+                                        <div id="demo-dp-inlinex">
+                                            <div>
+                                                <div class="datepicker datepicker-inline">
+                                                    <div class="datepicker-days" style="display: block;">
+                                                        <table class=" table-condensed">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="prev" style="visibility: visible;">«</th>
+                                                                <th colspan="5" class="datepicker-switch">December
+                                                                    2015
+                                                                </th>
+                                                                <th class="next" style="visibility: visible;">»</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="dow">Su</th>
+                                                                <th class="dow">Mo</th>
+                                                                <th class="dow">Tu</th>
+                                                                <th class="dow">We</th>
+                                                                <th class="dow">Th</th>
+                                                                <th class="dow">Fr</th>
+                                                                <th class="dow">Sa</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td class="old day">29</td>
+                                                                <td class="old day">30</td>
+                                                                <td class="day">1</td>
+                                                                <td class="day">2</td>
+                                                                <td class="day">3</td>
+                                                                <td class="day">4</td>
+                                                                <td class="day">5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="day">6</td>
+                                                                <td class="day">7</td>
+                                                                <td class="day">8</td>
+                                                                <td class="day">9</td>
+                                                                <td class="day">10</td>
+                                                                <td class="day">11</td>
+                                                                <td class="today day">12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="day">13</td>
+                                                                <td class="day">14</td>
+                                                                <td class="day">15</td>
+                                                                <td class="day">16</td>
+                                                                <td class="day">17</td>
+                                                                <td class="day">18</td>
+                                                                <td class="day">19</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="day">20</td>
+                                                                <td class="day">21</td>
+                                                                <td class="day">22</td>
+                                                                <td class="active day">23</td>
+                                                                <td class="day">24</td>
+                                                                <td class="day">25</td>
+                                                                <td class="day">26</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="day">27</td>
+                                                                <td class="day">28</td>
+                                                                <td class="day">29</td>
+                                                                <td class="day">30</td>
+                                                                <td class="day">31</td>
+                                                                <td class="new day">1</td>
+                                                                <td class="new day">2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="new day">3</td>
+                                                                <td class="new day">4</td>
+                                                                <td class="new day">5</td>
+                                                                <td class="new day">6</td>
+                                                                <td class="new day">7</td>
+                                                                <td class="new day">8</td>
+                                                                <td class="new day">9</td>
+                                                            </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            <tr>
+                                                                <th colspan="7" class="clear" style="display: none;">
+                                                                    Clear
+                                                                </th>
+                                                            </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <div class="datepicker-months" style="display: none;">
+                                                        <table class="table-condensed">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="prev" style="visibility: visible;">«</th>
+                                                                <th colspan="5" class="datepicker-switch">2015</th>
+                                                                <th class="next" style="visibility: visible;">»</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td colspan="7"><span class="month">Jan</span><span
+                                                                        class="month">Feb</span><span
+                                                                        class="month">Mar</span><span
+                                                                        class="month">Apr</span><span
+                                                                        class="month">May</span><span
+                                                                        class="month">Jun</span><span
+                                                                        class="month">Jul</span><span
+                                                                        class="month">Aug</span><span
+                                                                        class="month">Sep</span><span
+                                                                        class="month">Oct</span><span
+                                                                        class="month">Nov</span><span
+                                                                        class="month active">Dec</span>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            <tr>
+                                                                <th colspan="7" class="today">Today</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="7" class="clear" style="display: none;">
+                                                                    Clear
+                                                                </th>
+                                                            </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <div class="datepicker-years" style="display: none;">
+                                                        <table class="table-condensed">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="prev" style="visibility: visible;">«</th>
+                                                                <th colspan="5" class="datepicker-switch">2010-2019</th>
+                                                                <th class="next" style="visibility: visible;">»</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td colspan="7"><span class="year old">2009</span><span
+                                                                        class="year">2010</span><span
+                                                                        class="year">2011</span><span
+                                                                        class="year">2012</span><span
+                                                                        class="year">2013</span><span
+                                                                        class="year">2014</span><span
+                                                                        class="year active">2015</span><span
+                                                                        class="year">2016</span><span
+                                                                        class="year">2017</span><span
+                                                                        class="year">2018</span><span
+                                                                        class="year">2019</span><span
+                                                                        class="year new">2020</span></td>
+                                                            </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            <tr>
+                                                                <th colspan="7" class="today">Today</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="7" class="clear" style="display: none;">
+                                                                    Clear
+                                                                </th>
+                                                            </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label">File input</label>
+
+                                    <div class="col-md-9">
+                                        <img width="150px" src="http://static.sg.groupon-content.net/71/17/1449560961771.jpg" style="float:left">
+
+											<div class="pull-left btn btn-default btn-file" style="margin-top:110px;margin-left:-150px;" style="float:left">
+											Browse... <input type="file">
+											</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class=" text-right">
+                                        <a href="success.html" class="btn btn-info col-xs-12" style="padding-top: 10px; padding-bottom: 10px;">Create Campaign</a>
+                                    </div>
+
+                                </div>
+                            </form>
+                            <!--===================================================-->
+                            <!-- END BASIC FORM ELEMENTS -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end here -->
+
+
+            </div>
+            <!--===================================================-->
+            <!--End page content-->
+
+
+        </div>
+        <!--===================================================-->
+        <!--END CONTENT CONTAINER-->
+
+
+        <!--MAIN NAVIGATION-->
+        <!--===================================================-->
+        <nav id="mainnav-container" style="height: 2000px;">
+            <div id="mainnav">
+
+                <!--Menu-->
+                <!--================================-->
+                <div id="mainnav-menu-wrap">
+                    <div class="nano has-scrollbar">
+                        <div class="nano-content" tabindex="0" style="right: -15px;">
+                            <ul id="mainnav-menu" class="list-group">
+
+                                <!--Category name-->
+                                <li class="list-header">Navigation</li>
+
+                                <!--Menu list item-->
+                                <li>
+                                    <a href="index.html">
+                                        <i class="fa fa-dashboard"></i>
+											<span class="menu-title">
+												<strong>Dashboard</strong>
+											</span>
+                                    </a>
+                                </li>
+
+                                <!--Menu list item-->
+                                <li class="active-link">
+                                    <a href="#index.html#">
+                                        <i class="fa fa-flask"></i>
+											<span class="menu-title">
+												<strong>Promotion Campaign</strong>
+											</span>
+                                        <i class="arrow"></i>
+                                    </a>
+
+                                    <!--Submenu-->
+                                    <ul class="collapse">
+                                        <li>
+                                            <a href="create.html">
+                                                Create Campaign</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="list-divider"></li>
+
+
+                            </ul>
+
+
+                            <!--Widget-->
+                            <!--================================-->
+                            <div class="mainnav-widget">
+
+                                <!-- Show the button on collapsed navigation -->
+                                <div class="show-small">
+                                    <a href="#index.html#" data-toggle="menu-widget"
+                                       data-target="#demo-wg-server">
+                                        <i class="fa fa-desktop"></i>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <!--================================-->
+                            <!--End widget-->
+
+                        </div>
+                        <div class="nano-pane" style="display: none;">
+                            <div class="nano-slider" style="height: 20px; transform: translate(0px, 0px);"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--================================-->
+                <!--End menu-->
+
+            </div>
+        </nav>
+        <!--===================================================-->
+        <!--END MAIN NAVIGATION-->
+
+        <!--ASIDE-->
+        <!--===================================================-->
+        <aside id="aside-container">
+            <div id="aside">
+                <div class="nano has-scrollbar">
+                    <div class="nano-content" tabindex="0" style="right: -15px;">
+
+                        <!--Nav tabs-->
+                        <!--================================-->
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="active">
+                                <a href="#index.html#demo-asd-tab-1"
+                                   data-toggle="tab">
+                                    <i class="fa fa-comments"></i>
+                                    <span class="badge badge-purple">7</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#index.html#demo-asd-tab-2"
+                                   data-toggle="tab">
+                                    <i class="fa fa-info-circle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#index.html#demo-asd-tab-3"
+                                   data-toggle="tab">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--================================-->
+                        <!--End nav tabs-->
+
+                    </div>
+                    <div class="nano-pane" style="display: none;">
+                        <div class="nano-slider" style="height: 20px; transform: translate(0px, 0px);"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--===================================================-->
+        <!--END ASIDE-->
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <!--===================================================-->
+    <footer id="footer">
+
+        <!-- Visible when footer positions are fixed -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <div class="show-fixed pull-right">
+            <ul class="footer-list list-inline">
+                <li>
+                    <p class="text-sm">SEO Proggres</p>
+
+                    <div class="progress progress-sm progress-light-base">
+                        <div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <p class="text-sm">Online Tutorial</p>
+
+                    <div class="progress progress-sm progress-light-base">
+                        <div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+                    </div>
+                </li>
+                <li>
+                    <button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Remove the class name "show-fixed" and "hide-fixed" to make the content always appears. -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+    </footer>
+    <!--===================================================-->
+    <!-- END FOOTER -->
+
+
+    <!-- SCROLL TOP BUTTON -->
+    <!--===================================================-->
+    <button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
+    <!--===================================================-->
+
+
+    <div id="floating-top-right" class="floating-container"></div>
+</div>
+<!--===================================================-->
+<!-- END OF CONTAINER -->
+
+
+<!--JAVASCRIPT-->
+<!--=================================================-->
+
+<!--jQuery [ REQUIRED ]-->
+<script src="js/jquery-2.1.1.min.js"></script>
+
+
+<!--BootstrapJS [ RECOMMENDED ]-->
+<script src="js/bootstrap.min.js"></script>
+
+
+<!--Fast Click [ OPTIONAL ]-->
+<script src="js/fastclick.min.js"></script>
+
+
+<!--Nifty Admin [ RECOMMENDED ]-->
+<script src="js/nifty.min.js"></script>
+
+
+<!--Sparkline [ OPTIONAL ]-->
+<script src="js/jquery.sparkline.min.js"></script>
+
+
+<!--Skycons [ OPTIONAL ]-->
+<script src="js/skycons.min.js"></script>
+
+
+<!--Switchery [ OPTIONAL ]-->
+<script src="js/switchery.min.js"></script>
+
+
+<!--Bootstrap Select [ OPTIONAL ]-->
+<script src="js/bootstrap-select.min.js"></script>
+
+
+<!--Demo script [ DEMONSTRATION ]-->
+<script src="js/nifty-demo.min.js"></script>
+
+
+<script src="js/chosen.jquery.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-timepicker.min.js"></script>
+<script src="js/test.js"></script>
+
+
+</body>
+</html>
